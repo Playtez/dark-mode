@@ -1,6 +1,7 @@
 import React from "react";
 
 import useDarkMode from "../hooks/useDarkMode";
+import NewPage from "./NewPage";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkMode();
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
+      {/* <NewPage /> */}
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
